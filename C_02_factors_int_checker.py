@@ -12,7 +12,7 @@ def num_check(question):
 
         try:
             # ask the user for a number
-            response = int(question)
+            response = int(response)
 
             # check that the number is between 1 and 200
             if 1 <= response <= 200:
