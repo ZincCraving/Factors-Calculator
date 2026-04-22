@@ -4,13 +4,10 @@ def statement_generator(statement, decoration):
     print(f"\n{decoration * 5} {statement} {decoration * 5}")
 
 # Displays Instructions
-def instructions(want_instruction):
+def instructions():
     statement_generator("Instructions", "-")
 
-
-    if want_instruction == "":
-        instructions()
-        print('''
+    print('''
                                 Enter an integer more or equal to 1 and less or equal to 200. The program will show you the factors of your provided integer.
                                 \n
                                 It will also tell you if your chosen number:
@@ -20,7 +17,7 @@ def instructions(want_instruction):
 
                                 If you wish to exit the code type 'xxx'
                                 ''')
-        print("program continues")
+    print("program continues")
 
 
 
@@ -55,10 +52,10 @@ def num_check(question):
 statement_generator( "The Ultimate Factor Finder", "-")
 
 # Display instructions if requested
-want_instructions = input("\nPress <enter> to read the instructions "
+want_instruction = input("\nPress <enter> to read the instructions "
                           "or any key to continue")
 
-if want_instructions == "":
+if want_instruction == "":
     instructions()
 
 while True:
